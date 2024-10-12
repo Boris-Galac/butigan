@@ -77,6 +77,18 @@
   padding: 0;
   animation: call-btn 2s infinite alternate ease-in-out;
 }
+.socials {
+  position: absolute;
+  left: 0.2rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 7px;
+  /* outline: 1px solid white; */
+}
 @keyframes call-btn {
   from {
     filter: drop-shadow(0px 0px 0px green);
@@ -110,5 +122,13 @@
   }
   .cta-btn {
     margin-inline: unset;
+  }
+  .socials {
+    position: absolute;
+    left: 2rem;
+    bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid white;
   }
 }
