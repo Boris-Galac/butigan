@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <script defer src="/src/js/main.js"></script>
+    <title>website</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo"
+        ><img
+          class="header__logo-img"
+          src="/src/assets/icons/logo.svg"
+          alt="logo"
+      /></a>
+      <button
+        class="ham-btn"
+        aria-label="ham button"
+        data-active="false"
+        tabindex="0"
+        aria-controls="nav"
+      >
+        <div class="ham-line"></div>
+        <!-- <div class="ham-line"></div> -->
+        <div class="ham-line"></div>
+      </button>
+      <nav class="nav mobile-nav" id="nav" aria-expanded="false">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link nav__link--first"
+              >Naslovna
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#lady" class="nav__link">Ponuda</a>
+          </li>
+          <li class="nav__item">
+            <a href="#ponuda" class="nav__link">Galerija</a>
+          </li>
+          <li class="nav__item">
+            <a href="gallery.html" class="nav__link">Kako do nas?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Često postavljena pitanja</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="swiper hero-overlays">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="/src/assets/images/hero-overlay--1.jpg"
+              alt="overlay image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/src/assets/images/hero-overlay--2.jpg"
+              alt="overlay image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/src/assets/images/hero-overlay--3.jpg"
+              alt="overlay image"
+            />
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="hero__content-wrapper">
+          <h1 class="headline">DOŽIVITE JADRAN NAŠIM BRODOVIMA</h1>
+          <p class="subheadline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a href="#" class="btn cta-btn"
+            >Pogledaj više
+            <img src="/src/assets/icons/arrow-right-cta-icon.svg" alt="arrow"
+          /></a>
+        </div>
+        <a href="#"
+          ><img
+            src="/src/assets/icons/scroll-down-icon.svg"
+            class="scroll-down-btn"
+        /></a>
+      </section>
+    </main>
+    <a class="call-btn" href="#"
+      ><img src="/src/assets/icons/call-out-btn.svg"
+    /></a>
+  </body>
+</html>

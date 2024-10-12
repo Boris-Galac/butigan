@@ -1,0 +1,114 @@
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__content-wrapper {
+  padding-inline: 4vw;
+  background-color: #0000001f;
+  backdrop-filter: blur(5px);
+  padding-block: 2rem;
+  width: 90%;
+  border-radius: 10px;
+}
+.headline,
+.subheadline {
+  text-align: center;
+}
+.headline {
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 300;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+.subheadline {
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  max-width: 70ch;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-inline: 2.5rem;
+  padding-block: 1rem;
+  border-radius: 100px;
+  outline: 1px solid white;
+  width: max-content;
+  background-color: #ffffff12;
+  transition: 0.25s;
+  margin-inline: auto;
+}
+.cta-btn {
+  color: #fff;
+  box-shadow: 0 0 16px 10px #004df963;
+}
+.cta-btn:hover {
+  box-shadow: 0 0 16px 16px #004df9;
+}
+.hero-overlays {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.swiper-wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.scroll-down-btn {
+  position: absolute;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.call-btn {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0;
+  animation: call-btn 2s infinite alternate ease-in-out;
+}
+@keyframes call-btn {
+  from {
+    filter: drop-shadow(0px 0px 0px green);
+    scale: 0.8;
+  }
+  to {
+    filter: drop-shadow(0px 0px 10px green);
+    scale: 1;
+  }
+}
+@media (min-width: 1152px) {
+  .hero {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__content-wrapper {
+    padding-inline: 4vw;
+    background-color: #0000001f;
+    backdrop-filter: blur(5px);
+    padding-block: 2rem;
+    width: 60%;
+    border-radius: 10px;
+  }
+  .headline,
+  .subheadline {
+    text-align: start;
+  }
+  .cta-btn {
+    margin-inline: unset;
+  }
+}
